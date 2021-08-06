@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                    <span class="title"><h2>IPOD</h2></span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                    <span class="title">customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                    <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                    <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                    <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpeg" width="40" 
+                    height="50" alt="">
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,000</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">200</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,000</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">Ksh 2,000</div>
+                        <div class="cardName">Earnings</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recents Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payments</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>ksh 30,000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cooler Box</td>
+                                <td>ksh 10,000</td>
+                                <td>Due</td>
+                                <td><span class="status delivered">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hoofer</td>
+                                <td>ksh 12,000</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Television</td>
+                                <td>ksh 40,000</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In progress</span></td>
+                            </tr>
+                            r>
+                                <td>Watch</td>
+                                <td>ksh 12,000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>ksh 30,000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cooler Box</td>
+                                <td>ksh 10,000</td>
+                                <td>Due</td>
+                                <td><span class="status delivered">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hoofer</td>
+                                <td>ksh 12,000</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Television</td>
+                                <td>ksh 40,000</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recents Customers</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="user.jpeg" alt=""></div></td>
+                                <td><h4>David<br><span>Uganda</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="user.jpeg" alt=""></div></td>
+                                <td><h4>Calek<br><span>Nairobi</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="user.jpeg" alt=""></div></td>
+                                <td><h4>Stella<br><span>Kileleshwa</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="user.jpeg" alt=""></div></td>
+                                <td><h4>Dama<br><span>Kitale</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="user.jpeg" alt=""></div></td>
+                                <td><h4>Steve<br><span>Kisumu</span></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');  
+            let main = document.querySelector('.main');    
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active'); 
+        }
+    </script>
+</body>
+</html>
